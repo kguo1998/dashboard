@@ -23,32 +23,32 @@ class Sidebar extends Component {
           <ul className="nav in" id="side-menu">
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
-                <i className="fa fa-dashboard fa-fw" /> &nbsp;Dashboard
+                <i className="fa fa-dashboard fa-fw" /> &nbsp;&nbsp;Dashboard
               </a>
             </li>
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/findride'); }} >
-                <Glyphicon style={{marginLeft: '2px', marginRight: '2px'}} glyph="search"/> &nbsp;Find A Ride
+                <Glyphicon style={{marginLeft: '3px'}} glyph="search"/> &nbsp;&nbsp;Find A Ride
               </a>
             </li>
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/rewards'); }} >
-                <Glyphicon style={{marginLeft: '2px', marginRight: '2px'}} glyph="star"/> &nbsp;Rewards
+                <Glyphicon style={{marginLeft: '3px'}} glyph="star"/> &nbsp;&nbsp;Rewards
               </a>
             </li>
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/history'); }} >
-                <Glyphicon style={{marginLeft: '2px', marginRight: '2px'}} glyph="list"/> &nbsp;Ride History
+                <Glyphicon style={{marginLeft: '3px'}} glyph="list"/> &nbsp;&nbsp;Ride History
               </a>
             </li>
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/settings'); }} >
-                <Glyphicon style={{marginLeft: '2px', marginRight: '2px'}} glyph="cog"/> &nbsp;Settings
+                <Glyphicon style={{marginLeft: '3px'}} glyph="cog"/> &nbsp;&nbsp;Settings
               </a>
             </li>
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/account'); }} >
-                <Glyphicon style={{marginLeft: '2px', marginRight: '2px'}} glyph="user"/> &nbsp;Account Information
+                <Glyphicon style={{marginLeft: '3px'}} glyph="user"/> &nbsp;&nbsp;Account Information
               </a>
             </li>
           </ul>

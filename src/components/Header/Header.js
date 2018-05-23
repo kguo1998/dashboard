@@ -21,7 +21,7 @@ import history from '../../core/history';
 import $ from "jquery";
 import Sidebar from '../Sidebar';
 
-const logo = require('./logo-small-icon.png');
+const logo = require('./apple-touch-icon.png');
 
 function Header() {
   return (
