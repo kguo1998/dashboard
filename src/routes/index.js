@@ -13,7 +13,7 @@ import App from '../components/App';
 // Child routes
 import home from './home';
 import login from './login';
-import blank from './dashboardPages/blank';
+import findRide from './find-ride';
 import error from './error';
 
 import Header from '../components/Header';
@@ -34,15 +34,12 @@ export default [
     },
   },
 
-
   {
     path: '/',
 
   // keep in mind, routes are evaluated in order
     children: [
       home,
-      blank,
-
       // place new routes before...
       error,
     ],
@@ -55,6 +52,23 @@ export default [
       return render(
         <div>
           <Header />
+          <div id="page-wrapper" className="page-wrapper">
+            <App context={context}>{component}</App>
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    path: '/find-ride',
+    children: [
+      findRide,
+    ],
+    async action({ next, render, context }) {
+      const component = await next();
+      if (component === undefined) return component;
+      return render(
+        <div>
           <div id="page-wrapper" className="page-wrapper">
             <App context={context}>{component}</App>
           </div>

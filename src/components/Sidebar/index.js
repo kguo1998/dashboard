@@ -27,7 +27,7 @@ class Sidebar extends Component {
               </a>
             </li>
             <li>
-              <a href="" onClick={(e) => { e.preventDefault(); history.push('/findride'); }} >
+              <a href="" onClick={(e) => { e.preventDefault(); history.push('/find-ride'); }} >
                 <Glyphicon style={{marginLeft: '3px'}} glyph="search"/> &nbsp;&nbsp;Find A Ride
               </a>
             </li>
