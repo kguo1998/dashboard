@@ -29,6 +29,7 @@ function ErrorPage({ error }, context) {
 
   return (
     <div>
+      <h1>this is an error page</h1>
       <h1>{title}</h1>
       <p>{content}</p>
       {errorMessage}

@@ -1,15 +1,15 @@
 import React, { PropTypes } from 'react';
 import { PageHeader } from 'react-bootstrap';
 
-const title = 'Blank';
+const title = 'accountInformation';
 
-function displayBlank(props, context) {
+function displayaccountInformation(props, context) {
   context.setTitle(title);
   return (
     <div>
       <div className="row">
         <div className="col-lg-12">
-          <PageHeader>Blank</PageHeader>
+          <PageHeader>This is Account Information</PageHeader>
         </div>
       </div>
     </div>
@@ -17,5 +17,5 @@ function displayBlank(props, context) {
 }
 
 
-displayBlank.contextTypes = { setTitle: PropTypes.func.isRequired };
-export default displayBlank;
+displayaccountInformation.contextTypes = { setTitle: PropTypes.func.isRequired };
+export default displayaccountInformation;

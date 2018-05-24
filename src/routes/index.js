@@ -65,6 +65,7 @@ export default [
       findRide,
     ],
     async action({ next, render, context }) {
+      console.log('routes index action');
       const component = await next();
       if (component === undefined) return component;
       return render(

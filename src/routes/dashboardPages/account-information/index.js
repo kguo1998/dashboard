@@ -1,12 +1,12 @@
 import React from 'react';
-import Blank from './blank';
+import accountInformation from './account-information';
 
 export default {
-  path: '/blank',
+  path: '/account',
 
   action() {
-  	console.log('loading account-information')
-    return <Blank />;
+  	console.log('loading account-information');
+    return <accountInformation />;
   },
 
 };
