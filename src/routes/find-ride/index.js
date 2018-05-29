@@ -1,6 +1,6 @@
 import React from 'react';
 import findRide from './find-ride';
-
+import Header from '../../components/Header';
 
 export default {
   path: '/',
@@ -9,7 +9,7 @@ export default {
   	console.log('loading find-ride');
     return (
       <div>
-        <findRide/>
+      <Header />
       </div>
     );
   },
