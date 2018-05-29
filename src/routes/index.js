@@ -60,24 +60,6 @@ export default [
     },
   },
   {
-    path: '/find-ride',
-    children: [
-      findRide,
-    ],
-    async action({ next, render, context }) {
-      console.log('routes index action');
-      const component = await next();
-      if (component === undefined) return component;
-      return render(
-        <div>
-          <div id="page-wrapper" className="page-wrapper">
-            <App context={context}>{component}</App>
-          </div>
-        </div>
-      );
-    },
-  },
-  {
     path: '/error',
     children: [
       error,
@@ -89,6 +71,22 @@ export default [
       if (component === undefined) return component;
       return render(
         <App context={context}>{component}</App>
+      );
+    },
+  },
+  {
+    path: '/find-ride',
+    children: [
+      findRide,
+    ],
+    async action({ next, render, context }) {
+      console.log('routes index action');
+      const component = await next();
+      if (component === undefined) return component;
+      return render(
+        <div>
+            <App context={context}>{component}</App>
+        </div>
       );
     },
   },
