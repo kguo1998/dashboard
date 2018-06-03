@@ -1,5 +1,6 @@
 import React from 'react';
 import findRide from './find-ride';
+import 'find.css';
 
 
 export default {
@@ -9,6 +10,8 @@ export default {
   	console.log('loading find-ride');
     return (
       <div>
+          
+
         <findRide/>
       </div>
     );
