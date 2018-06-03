@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { PageHeader } from 'react-bootstrap';
 
 
-const title = 'findRide';
+const title = 'Find Ride';
 
 function findRide(props, context) {
   context.setTitle(title);
